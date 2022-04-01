@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    
+        <h1>Light and Sound Memory Game!</h1>
+        
+          <p>
+           Welcome to the game! Repeat back the pattern that you hear by pressing the buttons.
+          </p>
+          <!-- ADD BUTTON HERE -->
+
+            <button id="startBtn" onclick="startGame()">
+              Start
+            </button>
+            <button id= "stopBtn" class = "hidden" onclick="stopGame()">
+              Stop
+            </button>
+
+            <div class="countdown">
+              <div id="timer">
+                <h2>Time Remaining: </h2>
+                <p id="clock">2:00</p>
+              </div>
+            </div>
+            
+            <div class="level">
+              <h2 id = "difficulty">Level </h2>
+              <button id="easy" onclick="easyMode();startGame();">Easy</button>
+              <button id="medium" onclick="mediumMode();startGame();">Medium</button>
+              <button id="hard" onclick= "hardMode();startGame();">Hard</button>
+  
+  
+            </div>
+              
+              
+          <div id="gameButtonArea">
+            
+            <button id="button1" onclick="guess(1)"  onmousedown="startTone(1)" onmouseup="stopTone()">
+              <audio src= "https://cdn.glitch.global/2b9d1fd4-93c2-46f5-9d2d-55bbc2c75535/BulbasaurA.mp3?v=1648743773979" id="button1Audio"></audio>
+            </button>
+            
+            <button id= "button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()">
+              <audio src= "https://cdn.glitch.global/2b9d1fd4-93c2-46f5-9d2d-55bbc2c75535/squirtle.mp3?v=1648754711605" id="button2Audio"></audio>
+            </button>
+            <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"
+            >
+                <audio src= "https://cdn.glitch.global/2b9d1fd4-93c2-46f5-9d2d-55bbc2c75535/charmanderA.mp3?v=1648743588189" id="button3Audio"></audio>
+            </button>
+          
+            <button id= "button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()">  
+                          <audio src= "https://cdn.glitch.global/2b9d1fd4-93c2-46f5-9d2d-55bbc2c75535/pikachuA.mp3?v=1648743594222" id="button4Audio"></audio>
+            </button>
+                        <button id= "button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"
+            >  <audio src= "https://cdn.glitch.global/2b9d1fd4-93c2-46f5-9d2d-55bbc2c75535/pidgeyA%20(1).mp3?v=1648755856998" id="button5Audio"></audio>
+            </button>
+
+            <button id= "button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()" class="hidden"
+            >  <audio src= "https://cdn.glitch.global/2b9d1fd4-93c2-46f5-9d2d-55bbc2c75535/chimcharA.mp3?v=1648745930287" id="button6Audio"></audio>
+            </button>
+
+            <button id= "button7" onclick="guess(7)" onmousedown="startTone(7)" onmouseup="stopTone()" class="hidden"
+            >  <audio src= "https://cdn.glitch.global/2b9d1fd4-93c2-46f5-9d2d-55bbc2c75535/starlyA.mp3?v=1648746636596" id="button7Audio"></audio>
+            </button>
+            <button id= "button8" onclick="guess(8)" onmousedown="startTone(8)" onmouseup="stopTone()" class="hidden"
+            >  <audio src= "https://cdn.glitch.global/2b9d1fd4-93c2-46f5-9d2d-55bbc2c75535/turtwigA.mp3?v=1648745240158" id="button8Audio"></audio>
+            </button>
+            <button id= "button9" onclick="guess(9)" onmousedown="startTone(9)" onmouseup="stopTone()" class="hidden"
+            >  <audio src= "https://cdn.glitch.global/2b9d1fd4-93c2-46f5-9d2d-55bbc2c75535/piplupA.mp3?v=1648744145181" id="button9Audio"></audio>
+            </button>
+            <button id= "button10" onclick="guess(10)" onmousedown="startTone(10)" onmouseup="stopTone()" class="hidden"
+            >  <audio src= "https://cdn.glitch.global/2b9d1fd4-93c2-46f5-9d2d-55bbc2c75535/EveeA.mp3?v=1648743591305" id="button10Audio"></audio>
+            </button>
+
+
+
+            
+          
+          </div>
+ 
+         
+        
+        
+          <!-- Once you've added the button from the readme, click it in the page -->
+          <!-- Check out the function in script.js to see how it works -->
+        
+    
+    
+   
+      <div class="links"></div>
+     
+  </body>
+</html>
